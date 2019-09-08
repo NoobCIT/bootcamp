@@ -4,38 +4,37 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Curriculum</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <%- include('../../partials/fonts') %>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <div class="page-container">
-      <%- include('../../partials/header') %>
-7      <div class="container">
-        <h2>The Introduction</h2>
-        <div class="section-container">
-          <h3>What this course is about</h3>
-            <p>
-              Welcome to the Godot Bootcamp.  This course is designed to take you from zero programming experience to independent game developer.  You will be able to design your own games from scratch after you are through with this bootcamp!
-            </p>
-        </div>
-        <div class="section-container">
-          <h2>How it will work</h2>
-            <p>
-              This course is 100% free.  Every resource you use will be free; however, if you have other software or resources that you own and are more familiar with, then that’d be fine too.  For example, Adobe Photoshop isn’t free, but there are a plethora of similar and free open source software such as GIMP, Fire Alpaca, etc.c. Goals
-            </p>
-        </div>
-        <div class="section-container">
-          <h2>Goals</h2>
-            <p>
-              The goal of this bootcamp is to get you to become and independent game developer.  Everything you learn will be from various opinions and resources.  There will be things you may disagree with which is fine.  You will soon learn there is no perfect way to do things when it comes to coding.  Everyone thinks differently and are at different skill levels.  The main purpose is to get you to be able to develop on your own and as you grow, you will refine your skills overtime through experience.  You will eventually do things your own way!
-            </p>
-        </div>
-        <div class="section-container">
-          <h2>Motivation</h2>
-            <p>
-              Coding is hard.  Don’t let anyone fool you saying it’s easy.  Yeah you hear that all the time “learn code in 3 months” etc but coding is a craft.  It requires A LOT of practice.  Watch this <a target="_blank" href="https://www.youtube.com/watch?v=j_yGRhdhVhY">video</a> and let your game development journey begin!
-            </p>
-        </div>
+    <%- include('../../partials/header') %>
+    <div class="course-heading">
+      Course 1: Introduction
+    </div>
+      <div class="course-section">
+        <div>What this course is about</div>
+          <p>
+            Welcome to the Godot Bootcamp.  This course is designed to take you from zero programming experience to independent game developer.  You will be able to design your own games from scratch after you are through with this bootcamp!
+          </p>
+      </div>
+      <div class="course-section">
+        <div>How it will work</div>
+          <p>
+            This course is 100% free.  Every resource you use will be free; however, if you have other software or resources that you own and are more familiar with, then that’d be fine too.  For example, Adobe Photoshop isn’t free, but there are a plethora of similar and free open source software such as GIMP, Fire Alpaca, etc.c. Goals
+          </p>
+      </div>
+      <div class="course-section">
+        <div>Goals</div>
+          <p>
+            The goal of this bootcamp is to get you to become and independent game developer.  Everything you learn will be from various opinions and resources.  There will be things you may disagree with which is fine.  You will soon learn there is no perfect way to do things when it comes to coding.  Everyone thinks differently and are at different skill levels.  The main purpose is to get you to be able to develop on your own and as you grow, you will refine your skills overtime through experience.  You will eventually do things your own way!
+          </p>
+      </div>
+      <div class="course-section">
+        <div>Motivation</div>
+          <p>
+            Coding is hard.  Don’t let anyone fool you saying it’s easy.  Yeah you hear that all the time “learn code in 3 months” etc but coding is a craft.  It requires A LOT of practice.  Watch this <a target="_blank" href="https://www.youtube.com/watch?v=j_yGRhdhVhY">video</a> and let your game development journey begin!
+          </p>
       </div>
     </div>
     <%- include('../../partials/footer') %>

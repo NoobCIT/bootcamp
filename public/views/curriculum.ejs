@@ -4,33 +4,29 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Curriculum</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <%- include('partials/fonts') %>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <div class="page-container">
-      <%- include('partials/header') %>
-      <div class="container">
-        <div class="course-container">
-          <p>
-            This is the beginning of your journey.  Go through each course one by one and you'll be a game developer in no time.  Currently, the curriculum focuses on 2D development, but I hope to incorporate 3D sometime in the future.
-          </p>
-        </div>
-        <div class="course-container">
-          <a href="/curriculum/course1">Course 1: Introduction</a>
-          <p>
-            You'll get an overview of game development in general and learn more about what this bootcamp entails.
-          </p>
-        </div>
-        <div class="course-container">
-          <a href="/curriculum/course2">Lesson 2: Basic Programming</a>
-          <p>
-            We'll go over basic programming concepts in this section.  It won't be the most exciting, but definitely one of the most necessary lessons in this whole curriculum.  Programming is all about being able to basic things such as using loops or arrays.  You gotta know the basics before we dive into heavy game development.
-          </p>
-        </div>
+    <%- include('partials/header') %>
+      <div class="curriculum-container">
+        <a href="/curriculum/course1">Course 1: Introduction</a>
+        <p>
+          Learn more about this bootcamp and get an overview of what you'll be going through.  It's a quick and easy introduction!
+        </p>
       </div>
-    </div>
-    <footer>
-    </footer>
+      <div class="curriculum-container">
+        <a href="/curriculum/course2">Course 2: Basic Programming</a>
+        <p>
+          We'll go over basic programming concepts in this section.  It won't be the most exciting, but definitely one of the most necessary lessons in this whole curriculum.  Programming is all about being able to basic things such as using loops or arrays.  You gotta know the basics before we dive into heavy game development.
+        </p>
+      </div>
+      <div class="curriculum-container">
+        <a href="/curriculum/course3">Course 3: Intermediate Programming</a>
+        <p>
+          We'll go over basic programming concepts in this section.  It won't be the most exciting, but definitely one of the most necessary lessons in this whole curriculum.  Programming is all about being able to basic things such as using loops or arrays.  You gotta know the basics before we dive into heavy game development.
+        </p>
+      </div>
+    <%- include('partials/footer') %>
   </body>
 </html>

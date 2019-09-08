@@ -1,35 +1,58 @@
 /* === VARIABLES === */
+@babyblue: #74b9ff;
 @black: #2d3436;
-@lightblue: #dfe6e9;
-@white: #f3f1ef;
 @gray: #636e72;
+@lightyellow: #ffeaa7;
+@white: #FDFDFA;
+@darkblue: #0984e3;
+@white-bg: #F9F9F3;
 
 /* === GLOBAL === */
 body {
   box-sizing: border-box;
   margin: 0px;
   word-spacing: 1px;
+  position: relative;
+  min-height: 100vh;
 }
 
 /* === HEADER === */
 .header-container {
-  background-color: #74b9ff;
+  background-color: @babyblue;
   font-family: "Raleway", "Arial", "Times New Roman";
   font-weight: 600;
 
   header {
     max-width: 768px;
     margin: 0px auto;
-    font-size: 36px;
     padding: 12px 12px 12px 12px;
-    color: #FDFDFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: @white;
+  }
+
+  #logo {
+    font-family: "Raleway", "Arial", "Times New Roman";
+    font-weight: 600;
+    font-size: 30px
+  }
+
+  #curriculum {
+    font-family: "Raleway", "Arial", "Times New Roman";
+    font-weight: 400;
+    font-size: 24px;
   }
 }
 
 /* === MAIN === */
 .main-heading {
   color: @black;
-  background-color: #ffeaa7;
+  background-color: @lightyellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +67,7 @@ body {
     font-weight: 300;
     padding: 0px 12px 0px 12px;
     margin: 60px 0px 36px 0px;
-    max-width: 760px;
+    max-width: 768px;
   }
 
   #sub {
@@ -53,7 +76,7 @@ body {
     font-weight: 600;
     padding: 0px 12px 0px 12px;
     margin-bottom: 72px;
-    max-width: 760px;
+    max-width: 768px;
   }
 
   a {
@@ -66,21 +89,21 @@ body {
     width: 200px;
     height: 48px;
     margin-bottom: 36px;
-    background-color: #74b9ff;
+    background-color: @babyblue;
     border-radius: 8px;
-    border: 2px solid #636e72;
-    color: #FDFDFA;
+    border: 2px solid @gray;
+    color: @white;
   }
 
   a:hover {
-    background-color: #0984e3;
+    background-color: @darkblue;
     border: 2px solid @black;
   }
 }
 
 /* === OVERVIEW === */
 .overview {
-  background-color: #F9F9F3;
+  background-color: @white-bg;
   padding: 12px 12px;
   text-align: center;
 
@@ -102,13 +125,12 @@ body {
 }
 
 /* === SKILL === */
-
 .skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F9F9F3;
+  background-color: @white-bg;
   padding: 12px 12px;
 
   .skill-heading {
@@ -125,6 +147,7 @@ body {
     font-size: 18px;
     max-width: 768px;
     margin: 12px auto 12px auto;
+    padding: 12px;
     text-align: center;
   }
 
@@ -133,43 +156,77 @@ body {
   }
 }
 
-/* === LESSON === */
-.course-container {
-  color: @white;
-  text-align: left;
-  padding: 12px;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 24px;
-  }
-}
-
+/* === FOOTER === */
 .footer-container {
-  background-color: #74b9ff;
+  background-color: @babyblue;
   font-family: "Raleway", "Arial", "Times New Roman";
   font-weight: 600;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
 
   footer {
     max-width: 768px;
     margin: 0px auto;
     font-size: 12px;
     padding: 6px 12px 6px 12px;
-    color: #FDFDFA;
+    color: @white;
   }
 }
 
-/* === RESPONSIVE STYLES === */
+/* === CURRICULUM === */
+.curriculum-container {
+  color: @black;
+  text-align: left;
+  padding: 12px;
 
-@media only screen and (max-width: 480px) {
+  a {
+    font-family: "Raleway", "Arial", "Times New Roman";
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: @black;
+  }
 
+  a:hover {
+    color: @gray;
+  }
+
+  p {
+    font-family: "Raleway", "Arial", "Times New Roman";
+    font-weight: 300;
+    font-size: 16px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-
+/* === COURSE === */
+.course-heading {
+  font-size: 36px;
+  font-family: "Lato", "Arial", "Times New Roman";
+  font-weight: 300;
+  text-align: center;
+  padding: 24px;
+  max-width: 768px;
+  margin: 0px auto;
 }
 
-@media only screen and (min-width: 769px) {
+.course-section {
+  max-width: 768px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 24px;
+  margin: 0px auto;
 
+  div {
+    font-family: "Raleway", "Arial", "Times New Roman";
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  p {
+    font-family: "Raleway", "Arial", "Times New Roman";
+    font-weight: 300;
+    font-size: 18px;
+    margin: 6px 0px 12px 0px;
+  }
 }
