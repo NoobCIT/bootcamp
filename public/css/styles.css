@@ -151,6 +151,8 @@ body {
   color: #2d3436;
   text-align: left;
   padding: 12px;
+  max-width: 768px;
+  margin: 0px auto;
 }
 .curriculum-container a {
   font-family: "Raleway", "Arial", "Times New Roman";
