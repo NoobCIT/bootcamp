@@ -167,7 +167,8 @@ body {
 .curriculum-container p {
   font-family: "Raleway", "Arial", "Times New Roman";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 24px;
 }
 /* === COURSE === */
 .course-heading {
@@ -194,6 +195,29 @@ body {
 .course-section p {
   font-family: "Raleway", "Arial", "Times New Roman";
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   margin: 6px 0px 12px 0px;
+  line-height: 24px;
+}
+.course-section ol ul li,
+.course-section ul li {
+  font-family: "Raleway", "Arial", "Times New Roman";
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px;
+}
+.course-section ol ul li a,
+.course-section ul li a {
+  text-decoration: none;
+  color: #74b9ff;
+}
+.course-section ol ul li a:hover,
+.course-section ul li a:hover {
+  color: #636e72;
+}
+.course-section ol li {
+  font-family: "Raleway", "Arial", "Times New Roman";
+  font-weight: 300;
+  font-size: 16px;
+  padding: 6px;
 }
