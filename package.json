@@ -16,5 +16,9 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "engines": {
+    "node": "9.8.0",
+    "npm": "6.9.0"
   }
 }
