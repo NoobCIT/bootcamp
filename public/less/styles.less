@@ -187,7 +187,7 @@ body {
     font-weight: 600;
     font-size: 24px;
     text-decoration: none;
-    color: @black;
+    color: @babyblue;
   }
 
   a:hover {
@@ -219,6 +219,12 @@ body {
   padding-right: 12px;
   padding-bottom: 24px;
   margin: 0px auto;
+
+  .screenshots {
+    display: block;
+    margin: 0px auto;
+    padding: 12px;
+  }
 
   div {
     font-family: "Raleway", "Arial", "Times New Roman";
@@ -255,5 +261,37 @@ body {
     font-weight: 300;
     font-size: 16px;
     padding: 6px;
+  }
+}
+
+/* === RESPONSIVE STYLES === */
+
+@media only screen and (max-width: 500px) {
+  .screenshots {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  .screenshots {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+  .screenshots {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+  .screenshots {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px) {
+  .screenshots {
+    max-width: 700px;
   }
 }
