@@ -5,6 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Curriculum</title>
     <%- include('../../partials/fonts') %>
+    <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
@@ -70,17 +71,90 @@
           </li>
             <ol type="a">
               <li>
-                Code this.
+                Declare the member variables a, s, arr from the reading into your program and try to get them to print in the output.
+              </li>
+              <li>
+                There is a lot of information here.  Some keywords and operators will be more obvious than others.  You don't need to memorize all of them, but with time, you'll definitely get a good grasp on a good chunk of them through learning.  Again, if you're not sure about something, you can always look it up here or google!
+              </li>
+              <li>
+                Lets write a new function that adds 2 numbers.  See the below code for guidance.  You can name the function whatever you'd like, in this case, I named it <i>add</i>.  The function takes in 2 parameters (inputs).
+                <pre class="language-gdscript line-numbers">
+                  <code>
+func add(num1, num2):
+  num1 + num2
+                  </code></pre>
+                Lets try to call the function in run:
+                <pre class="language-gdscript line-numbers">
+                  <code>
+func _run():
+  print(add(2, 3))
+                  </code></pre>
+                  Did you get the answer 5?  Hopefully not!  The output should show <i>Null</i> which basically means <i>nothing</i>.  What could be the issue here?  Well, it turns out the issue is that we did not <b>return</b> the value from our add function.  This is very important to remember, if you need to use the result of a function somewhere within your code, make sure to return the value:
+                <pre class="language-gdscript line-numbers">
+                  <code>
+func add(num1, num2):
+  return num1 + num2
+                  </code></pre>
+                  You should now get the correct answer which is 5.
+              </li>
+              <li>
+                Write functions using * (Multiplication), / (Division), % (Remainder).
+              </li>
+              <li>
+                Write functions using <, >, ==, !=, >= <=.
+              </li>
+              <li>
+                Write a single line and block comment.
               </li>
             </ol>
           <li>
             Read Built-in types to Container built-in types
+            <ol type="a">
+              <li>
+                Using the given array, answer the following questions.  Try to come up with answer in your head before checking your answer with code.
+                <pre class="language-gdscript line-numbers">
+                  <code>
+var my_array = ["hello", 0, 3, 8, "bye", 100]
+# 1 Give two ways to select "bye", hint: one way uses a negative sign.
+# 2 What does .size() do?
+# 3 What does my_array.size() return?
+# 4 What does my_array[1] + my_array[6] return?
+# 5 What does my_array[0] + my_array[4] return?
+                  </code></pre>
+              </li>
+              <li>
+                Create a dictionary.
+                <pre class="language-gdscript line-numbers">
+                  <code>
+var your_dictionary = {} # Empty dictionary
+# 1 Add the value "first" with the key "key1"
+# 2 Add the value 2 with the key "key2"
+# 3 Add the value 789 with the key 3
+# 4 Add the value "hello" with the key "4"
+# 5 Add the value [2, 4, 6] with the key "random"
+# 6 Add the value " " with the key "space"
+# 7 Add the value "there" with the key 1000
+# 8 What will print(your_dictionary) return?
+# 9 What will your_dictionary["key1"] return?
+# 10 What will your_dictionary[3] return?
+# 11 What will your_dictionary["4"] + your_dictionary["space"] + your_dictionary[1000] return?
+# 12 Does lowercase or uppercase matter?  Try it out on one of the keys!
+                  </code></pre>
+              </li>
+              <li>
+                What is wrong with this dictionary?
+                <pre class="language-gdscript line-numbers">
+                  <code>
+var his_dictionary = {
+  firstKey = 1,
+  "secondKey" = 12,
+  thirdkey = "123",
+  2 = 3
+  }
+                  </code></pre>
+              </li>
+            </ol>
           </li>
-          <ol type="a">
-            <li>
-              Code this.
-            </li>
-          </ol>
           <li>
             Read Data to Enums
           </li>
@@ -142,4 +216,5 @@
     </div>
     <%- include('../../partials/footer') %>
   </body>
+  <script src="../../../js/prism.js"></script>
 </html>

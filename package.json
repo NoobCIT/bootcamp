@@ -12,7 +12,8 @@
   "dependencies": {
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "gulp-less": "^4.0.1"
+    "gulp-less": "^4.0.1",
+    "prismjs": "^1.17.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
