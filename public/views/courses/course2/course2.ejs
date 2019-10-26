@@ -160,7 +160,7 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              Be comfortable with declaring variables.  There will be a lot of variables no matter how big or small your game is.
             </li>
           </ol>
           <li>
@@ -168,7 +168,72 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              What does first class objects means?  Hint: This is one of the main features of JavaScript.
+            </li>
+            <li>
+              When you run this, what will print?
+              <pre class="language-gdscript line-numbers">
+                <code>
+func eat(a = 120):
+  print(a)
+
+func _run():
+  print(eat())
+  print(eat(1337))
+                </code></pre>
+            </li>
+            <li>
+              When you run this, what will print?
+              <pre class="language-gdscript line-numbers">
+                <code>
+func eat(a := 120):
+  print(a)
+
+func _run():
+  print(eat("hello"))
+                </code></pre>
+            </li>
+            <li>
+              When you run this, what will print?
+              <pre class="language-gdscript line-numbers">
+                <code>
+func eat(a := 120):
+  print(a)
+
+func _run():
+  print(eat(1337))
+                </code></pre>
+            </li>
+            <li>
+              When you run this, what will print?
+              <pre class="language-gdscript line-numbers">
+                <code>
+# Within a file called script1.gd
+static func drink(some_parameter):
+  print(some_parameter)
+
+# Within a file called script2.gd
+var my_drink = preload("res://script1.gd")
+
+func _run():
+  my_drink.drink("coke")
+                </code></pre>
+            </li>
+            <li>
+              When you run this, what will print?
+              <pre class="language-gdscript line-numbers">
+                <code>
+# Within a file called script1.gd
+var a = "sprite" # member variable
+static func drink():
+  print(a)
+
+# Within a file called script2.gd
+  var my_drink = preload("res://script1.gd")
+
+func _run():
+  my_drink.drink()
+                </code></pre>
             </li>
           </ol>
           <li>
@@ -176,7 +241,7 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              There is a lot of stuff in here.  But just knowing your if else and while/for loop statements will take you a long way.  You'll have plenty of practice through exercises and projects.
             </li>
           </ol>
           <li>
@@ -184,7 +249,7 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              Just know that you're going to have a lot of different classes.  They are used to hold properties and group things together.  For example a class Bird has the function fly.  You decide to make a Pigeon class.  The Pigeon class can extend from Bird, meaning Pigeon inherit all properties/functionality from the Bird class.  You don't need to write a separate fly function for Pigeon, because it can just take the already written fly function in Bird.
             </li>
           </ol>
           <li>
@@ -192,7 +257,7 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              You will be using this a lot.  The main idea is the items you export will be made available in the Godot Editor where you can actually click and change the value.  It's a pretty cool feature that will get used over and over.
             </li>
           </ol>
           <li>
@@ -200,7 +265,7 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              You can code how ever you want, but know that things will get complicated the bigger the code base gets.  In general, it's good practice to use setters and getters to help control how data is manipulated.  It's easier to track variables/values and know exactly where they change and how to retrieve them to be used elsewhere.
             </li>
           </ol>
           <li>
@@ -208,7 +273,7 @@ var his_dictionary = {
           </li>
           <ol type="a">
             <li>
-              Code this.
+              Phew... you are finally at the end of the basics.  This last run is a lot to take in.  Don't worry if a lot of it sounds foreign to you.  Read and try to digest it as best you can.  It helps to have some background information when you actually use these throughout real projects.
             </li>
           </ol>
         </ol>
