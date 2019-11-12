@@ -52,13 +52,14 @@ body {
 /* === MAIN === */
 .main-heading {
   color: @black;
-  background-color: @lightyellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
   height: 650px;
+  background-image: url('../../images/homepagebgbotfade.jpg');
+  background-size: cover;
 
   #main {
     text-align: center;
@@ -261,6 +262,15 @@ body {
     font-weight: 300;
     font-size: 16px;
     padding: 6px;
+  }
+
+  ol li a {
+    text-decoration: none;
+    color: @babyblue;
+
+    &:hover {
+      color: @gray;
+    }
   }
 }
 
